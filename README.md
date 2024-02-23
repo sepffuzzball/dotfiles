@@ -16,9 +16,10 @@ stow
 mkdir ~/dotfiles
 cd ~/dotfiles
 git clone git@github.com:sepffuzzball/dotfiles.git
-./setup.sh
+zsh ./setup.sh
 
 ```
+NOTE: You may need to type exit after oh-my-zsh installs
 
 # Plugins and Themes
 
