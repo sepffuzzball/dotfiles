@@ -108,8 +108,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add zoxide
-#ZOXIDE_CMD_OVERRIDE="cd"
 eval "$(zoxide init zsh --cmd cd)"
+
+# Add direnv
+eval "$(direnv hook zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

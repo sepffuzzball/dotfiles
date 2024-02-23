@@ -1,5 +1,5 @@
 
-sudo apt-get install git zsh curl wget stow fzf -y
+sudo apt-get install git zsh curl wget stow fzf direnv -y
 cd ~/dotfiles
 stow .
 cd ~
