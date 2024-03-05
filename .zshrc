@@ -107,5 +107,9 @@ eval "$(zoxide init zsh --cmd cd)"
 # Add direnv
 eval "$(direnv hook zsh)"
 
+# Add task
+autoload -U compinit
+compinit -i
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
