@@ -2,16 +2,20 @@
 sudo apt-get update
 sudo apt-get install git zsh curl wget stow fzf direnv -y
 
+echo "stowing"
+
 if [ -d ~/dotfiles];
 then
   cd ~/dotfiles
   stow .
   cd ~
 else
-  cd ~/.config/dotfiles
+  cd ~/.config/coderv2/dotfiles
   stow .
   cd ~
 fi
+
+echo "install omz"
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
