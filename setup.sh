@@ -2,10 +2,6 @@
 sudo apt-get update
 sudo apt-get install git zsh curl wget stow fzf direnv -y
 
-echo "use zsh"
-chsh -s $(which zsh)
-zsh
-
 echo "stowing"
 
 if [ -d ~/dotfiles];
@@ -18,6 +14,10 @@ else
   stow .
   cd ~
 fi
+
+echo "use zsh"
+chsh -s $(which zsh)
+zsh
 
 echo "install omz"
 
