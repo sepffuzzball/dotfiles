@@ -1,6 +1,6 @@
 
 sudo apt-get update
-sudo apt-get install git zsh curl wget stow fzf direnv -y
+sudo apt-get install git zsh curl wget stow fzf direnv nano -y
 
 echo "stowing"
 
