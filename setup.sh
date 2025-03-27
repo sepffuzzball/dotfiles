@@ -1,8 +1,17 @@
 
+sudo apt-get update
 sudo apt-get install git zsh curl wget stow fzf direnv -y
-cd ~/dotfiles
-stow .
-cd ~
+
+if [ -d ~/dotfiles];
+then
+  cd ~/dotfiles
+  stow .
+  cd ~
+else
+  cd ~/.config/dotfiles
+  stow .
+  cd ~
+fi
 
 sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
